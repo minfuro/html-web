@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0d0d0d;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+#naglowek {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+}
+
+#kontener-naglowek {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#logo{
+    display: flex;
+    float: left;
+    margin-left: 1rem;
+}
+
+#logo img {
+    height: 65px;
+    border-radius: 10px;
+}
+
+#nawigacja ul {
+    list-style: none;
+    display: flex;
+}
+
+    #nawigacja ul li {
+    margin-left: 1.5rem;
+}
+
+#nawigacja ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#nawigacja ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Baner (Hero) */
+#baner {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/tlo-baner.png') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.zawartosc-baner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.zawartosc-baner p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.przycisk {
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.przycisk:hover {
+    background: #0097a7;
+}
+
+/* Sekcja Usługi */
+.sekcja-uslugi {
+    padding: 4rem 1rem;
+    background: #141414;
+    text-align: center;
+}
+
+.sekcja-uslugi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.kontener-uslugi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.karta-uslugi {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.karta-uslugi img {
+    width: 70%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.karta-uslugi h3 {
+    margin-bottom: 1rem;
+    color: #00bcd4;
+}
+
+.karta-uslugi p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.karta-uslugi:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.5);
+}
+
+/* Sekcja Kalkulator ROI */
+.sekcja-roi {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+.sekcja-roi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.widget-roi form {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.widget-roi label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#formularz-roi input[type="number"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.widget-roi button {
+    background: #00bcd4;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.widget-roi button:hover {
+    background: #0097a7;
+}
+
+#wynik-roi {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Sekcja Blog */
+.sekcja-blog {
+    padding: 4rem 1rem;
+    background: #141414;
+    text-align: center;
+    color: #fff;
+}
+
+.sekcja-blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.wpisy-blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.wpis {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wpis h3 {
+    color: #00bcd4;
+    margin-bottom: 1rem;
+}
+
+.wpis p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.wpis .przycisk {
+    margin-top: 0.5rem;
+}
+
+/* Sekcja Opinie */
+.sekcja-opinie {
+    padding: 4rem 1rem;
+    background: #0d0d0d;
+    text-align: center;
+    color: #fff;
+}
+
+.sekcja-opinie h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.karuzela-opinie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.opinia {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    font-style: italic;
+}
+
+.autor-opinii {
+    margin-top: 1rem;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #00bcd4;
+}
+
+/* Sekcja Kontakt */
+.sekcja-kontakt {
+    padding: 4rem 1rem;
+    background: #141414;
+    text-align: center;
+    color: #fff;
+}
+
+.sekcja-kontakt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.formularz-kontakt {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formularz-kontakt label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.formularz-kontakt input,
+.formularz-kontakt textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.formularz-kontakt button {
+    background: #00bcd4;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formularz-kontakt button:hover {
+    background: #0097a7;
+}
+
+/* Stopka */
+#stopka {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #333;
+    color: #ccc;
+}
+
+/* Animacje , a przynajmniej jakieś próby */
+
+@keyframes powiekszanieTla {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 200%;
+    }
+}
+
+#baner {
+    animation: powiekszanieTla 15s infinite alternate;
+}
+
+
+
+
+@keyframes swiecenie {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 188, 212, 1);
+    }
+}
+
+.przycisk,button {
+    animation: swiecenie 2s infinite alternate;
+}
+
+
+
+
+@keyframes tekst {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+h1, h2, h3, p, img {
+    animation: tekst 1s;
+}

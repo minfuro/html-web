@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - BiznesBoost</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" href="../img/ikona.png" type="image/x-icon">
+
+        <script src="../js/plik_pobieranie.js" defer></script>
+
+    </head>
+
+    <body>
+        <header id="naglowek">
+            <div id="kontener-naglowek">
+                <div id="logo">
+                    <img src="../img/logo.png" alt="BiznesBoost Logo">
+                </div>
+                <nav id="nawigacja">
+                    <ul id="lista-nawigacji">
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="onas.html">O nas</a></li>
+                        <li><a href="oferta.html">Oferta</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="kariera.html">Kariera</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="portfolio" class="sekcja-portfolio">
+                <h1>Nasze Realizacje</h1>
+                <article class="realizacja">
+                    <h2>Projekt A</h2>
+                    <p>Realizacja, w której wdrożyliśmy innowacyjne strategie zarządzania, przynoszące wymierne rezultaty.</p>
+                    <button onclick="pobierzPlikProjektu(1)" class="przycisk">Zobacz szczegóły Projektu A</button>
+                    <!--<p id="blad">Wystąpił Błąd. Spróbuj puźniej.</p>--> <!-- Nie daje tego bez komentarza ponieważ trzeba było robić skrypt który sprawdza poprawnośc pobrania pliku i jego wygenerowania , i tak samo do niższego przykładu-->
+                </article>
+                <article class="realizacja">
+                    <h2>Projekt B</h2>
+                    <p>Case study pokazujące, jak nasze działania marketingowe zwiększyły widoczność marki.</p>
+                    <button onclick="pobierzPlikProjektu(2)" class="przycisk">Zobacz szczegóły Projektu B</button>
+                    <!--<p id="blad">Wystąpił Błąd. Spróbuj puźniej.</p>-->
+                </article>
+                <article class="realizacja">
+                    <h2>Projekt C</h2>
+                    <p>Nasza strategia marketingowa znacząco zwiększyła widoczność marki StellarTech na rynku nowych technologii.</p>
+                    <button onclick="pobierzPlikProjektu(3)" class="przycisk">Zobacz szczegóły Projektu C</button>
+                    <p id="blod">Wystąpił Błąd. Spróbuj puźniej.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer id="stopka">
+            <p>&copy; 2025 BiznesBoost. Wszelkie prawa zastrzeżone.</p>
+        </footer>
+    </body>
+</html>

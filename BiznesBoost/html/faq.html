@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+            
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FAQ - BiznesBoost</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" href="../img/ikona.png" type="image/x-icon">
+
+        <script src="../js/wyszukiwanie.js" defer></script>
+
+    </head>
+
+    <body>
+        <header id="naglowek">
+            <div id="kontener-naglowek">
+                <div id="logo">
+                    <img src="../img/logo.png" alt="BiznesBoost Logo">
+                </div>
+                <nav id="nawigacja">
+                    <ul id="lista-nawigacji">
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="onas.html">O nas</a></li>
+                        <li><a href="oferta.html">Oferta</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="kariera.html">Kariera</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="faq" class="sekcja-faq">
+                <h1>Najczęściej zadawane pytania</h1>
+                
+                <input type="text" id="faq-wyszukiwanie" placeholder="Wyszukaj pytania..." oninput="wyszukiwanie_function()" />
+
+                <article class="pytanie-odpowiedz"  onclick="FAQ_jeden()">
+                    <h2>Jakie są koszty usług?</h2>
+                    <p id="FAQ_jeden">Ceny są ustalane indywidualnie, w zależności od specyfiki projektu.</p>
+                </article>
+                <article class="pytanie-odpowiedz"  onclick="FAQ_dwa()">
+                    <h2>Jak szybko mogę zobaczyć efekty?</h2>
+                    <p id="FAQ_dwa">W pierwszych miesiącach po wdrożeniu strategii klienci zauważają znaczący wzrost efektywności.</p>
+                </article>
+                <article class="pytanie-odpowiedz"  onclick="FAQ_trzy()">
+                    <h2>Jak wygląda proces współpracy?</h2>
+                    <p id="FAQ_trzy">Proces rozpoczyna się od konsultacji, po której opracowujemy szczegółowy plan działań.</p>
+                </article>
+                
+                <article class="pytanie-odpowiedz" onclick="FAQ_cztery()">
+                    <h2>Czy oferujecie wsparcie techniczne?</h2>
+                    <p id="FAQ_cztery">Tak, nasz zespół jest dostępny 24/7, aby pomóc w każdej kwestii związanej z projektem.</p>
+                </article>
+                <article class="pytanie-odpowiedz" onclick="FAQ_piec()">
+                    <h2>Czy mogę zobaczyć opinie innych klientów?</h2>
+                    <p id="FAQ_piec">Oczywiście, publikujemy liczne referencje oraz studia przypadków na naszej stronie.</p>
+                </article>
+                <article class="pytanie-odpowiedz" onclick="FAQ_szesc()">
+                    <h2>Co obejmuje oferta BiznesBoost?</h2>
+                    <p id="FAQ_szesc">Nasza oferta integruje kompleksowe usługi – od marketingu, poprzez strategie sprzedażowe, aż po wsparcie technologiczne.</p>
+                </article>
+                <article class="pytanie-odpowiedz" onclick="FAQ_siedem()">
+                    <h2>Jakie metody płatności akceptujecie?</h2>
+                    <p id="FAQ_siedem">Akceptujemy przelewy bankowe, karty kredytowe oraz płatności online, aby zapewnić Ci komfort i wygodę.</p>
+                </article>
+                <article class="pytanie-odpowiedz" onclick="FAQ_osiem()">
+                    <h2>Czy świadczycie usługi międzynarodowe?</h2>
+                    <p id="FAQ_osiem">Tak, nasze doświadczenie obejmuje współpracę z klientami z różnych krajów, co umożliwia działanie na wielu rynkach.</p>
+                </article>
+                <article class="pytanie-odpowiedz" onclick="FAQ_dziewiec()">
+                    <h2>Jakie są terminy realizacji projektów?</h2>
+                    <p id="FAQ_dziewiec">Terminy ustalamy indywidualnie, dostosowując je do zakresu i specyfiki projektu.</p>
+                </article>
+                <article class="pytanie-odpowiedz" onclick="FAQ_dziesiec()">
+                    <h2>Czy oferujecie gwarancję satysfakcji?</h2>
+                    <p id="FAQ_dziesiec">Tak, jesteśmy pewni jakości naszych usług, dlatego oferujemy gwarancję satysfakcji oraz indywidualne podejście do klienta.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer id="stopka">
+            <p>&copy; 2025 BiznesBoost. Wszelkie prawa zastrzeżone.</p>
+        </footer>
+    </body>
+</html>

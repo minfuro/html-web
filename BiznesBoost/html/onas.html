@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O nas - BiznesBoost</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/ikona.png" type="image/x-icon">
+
+    <script src="../js/wyszukiwanie_osob.js" defer></script>
+
+  </head>
+  
+  <body>
+    <header id="naglowek">
+      <div id="kontener-naglowek">
+        <div id="logo">
+          <img src="../img/logo.png" alt="BiznesBoost Logo">
+        </div>
+        <nav id="nawigacja">
+          <ul id="lista-nawigacji">
+              <li><a href="index.html">Strona główna</a></li>
+              <li><a href="onas.html">O nas</a></li>
+              <li><a href="oferta.html">Oferta</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="kariera.html">Kariera</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="onas" class="sekcja-onas">
+        <h1>O nas</h1>
+        <p>
+          BiznesBoost to firma, która wspiera rozwój przedsiębiorstw poprzez innowacyjne strategie, zaawansowaną analizę danych oraz profesjonalne doradztwo. Jesteśmy zespołem doświadczonych ekspertów, którzy każdego dnia pomagają naszym klientom osiągać sukces.
+        </p>
+      </section>
+
+        <section id="zespol" class="sekcja-zespol">
+            <h2>Nasz zespół</h2>
+            <div class="wyszukiwanie-panel">
+                <label for="rola-filter">Wybierz rolę: </label>
+                <select id="rola-filter" onchange="filtrujCzlonkow()">
+                  <option value="wszystkie">Wszystkie role</option>
+                  <option value="CEO">CEO</option>
+                  <option value="dyrektor">Dyrektor ds. Strategii</option>
+                  <option value="analityk">Analityk</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="sprzedaz">Sprzedaż</option>
+                  <option value="it">IT</option>
+                  <option value="hr">HR</option>
+                  <option value="finanse">Finanse</option>
+                  <option value="rozwoj">Rozwój</option>
+                </select>
+            </div>
+            
+            <div id="lista-czlonkow">
+                <!-- Nic nie wstawiać, a najlepiej nie dotykać, wstawia sie automatycznie poprzez Js -->
+            </div>
+
+            <button onclick="wiecej_pokaz()" id="Pokaz-wiecej">Pokaż Wiecej</button>
+
+        </section>
+        <br>
+    </main>
+
+    <footer id="stopka">
+      <p>&copy; 2025 BiznesBoost. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </body>
+</html>

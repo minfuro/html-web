@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #141414;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Nagłówek i Nawigacja */
+#naglowek {
+  background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+}
+
+#kontener-naglowek {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#logo img {
+  height: 65px;
+  border-radius: 10px;
+}
+
+#nawigacja ul {
+  list-style: none;
+  display: flex;
+}
+
+#nawigacja ul li {
+  margin-left: 1.5rem;
+}
+
+#nawigacja ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#nawigacja ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Stopka*/
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Strona "O nas"*/
+.sekcja-onas {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+}
+
+.sekcja-onas h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sekcja-onas p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* FOrmatowanie nagłówka h2 */
+.sekcja-zespol h2 {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Stylizacja panelu wyszukiwania */
+.wyszukiwanie-panel {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* Stylizacja etykiety */
+.wyszukiwanie-panel label {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+/* Stylizacja pola select */
+.wyszukiwanie-panel select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+
+
+
+.wyszukiwanie-panel select:focus {
+  border-color: #00bcd4;
+}
+
+/*Stylizacja sekcji button*/
+.sekcja-zespol button{
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Efekt dla sekcji button po kliknieciu*/
+.sekcja-zespol button:hover {
+  border-color: #00bcd4;
+}
+
+/*Stylizacja sekcji input*/
+#faq-wyszukiwanie{
+  margin-left: 35%;
+  margin-right: 40%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Efekt dla sekcji input po focus*/
+#faq-wyszukiwanie:focus {
+  border-color: #00bcd4;
+}
+
+/* Efekt dla pola select po uzyskaniu fokusu */
+.wyszukiwanie-panel select:focus {
+  border-color: #00bcd4;
+}
+
+
+/*Kontener lista-czlonkow*/
+#lista-czlonkow{
+  display:flex ;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Kontener członków zespołu*/
+.sekcja-zespol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.czlonek-zespolu {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.czlonek-zespolu h3 {
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Strona "Oferta" */
+.sekcja-oferta {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sekcja-oferta h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.usluga {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.usluga h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.usluga p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Strona "Portfolio" */
+.sekcja-portfolio {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sekcja-portfolio h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.realizacja {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.realizacja h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.realizacja p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Strona "FAQ" */
+.sekcja-faq {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sekcja-faq h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pytanie-odpowiedz {
+  background: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.pytanie-odpowiedz h2 {
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.pytanie-odpowiedz p {
+  font-size: 1.1rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* stylizacja niewidoczna*/
+
+.ukryty {
+  display: none;
+}
+
+/* Strona "Kariera" */
+.sekcja-kariera {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sekcja-kariera h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.oferta-pracy {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.oferta-pracy h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.oferta-pracy p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/*Wspólne style dla przycisków  */
+.przycisk {
+  display: inline-block;
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+.przycisk:hover {
+  background: #0097a7;
+}
+
+/* Sylizacja komunikatu blod (błąd)*/
+
+#blod{
+  display: none;
+  visibility: hidden;
+  color: red;
+  font-weight: bold;
+}
+
+/* Stylizacja apliakcji na stanowsko*/
+
+.aplikacja-form-div {
+  display: none;
+  visibility: hidden;
+}
+
+
+.aplikacja-form-div {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  display: none;
+  transition: max-height 0.3s ease-out;
+}
+
+.aplikacja-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-elemty {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-elemty label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.form-elemty input,
+.form-elemty textarea {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+  background-color: #141414;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.form-elemty input:focus,
+.form-elemty textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
